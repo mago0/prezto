@@ -30,3 +30,6 @@ source ~/.zsh/sensitive.zsh
 
 # Alias hub to git
 eval "$(hub alias -s)"
+
+# Set current TTY for GPG passphrase prompt
+export GPG_TTY=`tty`
