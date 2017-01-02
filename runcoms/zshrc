@@ -12,24 +12,7 @@ fi
 
 ### Customizations ###
 
-# Make the GNU commands default
-#PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-# For Privileged Homebrew Installs
-PATH="/usr/local/sbin:$PATH"
-# Add RVM to PATH for scripting
-PATH="$PATH:$HOME/.rvm/bin"
-export PATH
-# Make the GNU man pages the default
-#MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-export MANPATH
-
 # Source custom zsh files
 source ~/.zsh/aliases.zsh
 source ~/.zsh/functions.zsh
 source ~/.zsh/sensitive.zsh
-
-# Alias hub to git
-eval "$(hub alias -s)"
-
-# Set current TTY for GPG passphrase prompt
-export GPG_TTY=`tty`

@@ -47,6 +47,10 @@ path=(
   $path
 )
 
+# Make the GNU man pages the default
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+export MANPATH
+
 #
 # Less
 #
@@ -72,3 +76,9 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+
+#
+# Set current TTY for GPG passphrase prompt
+#
+
+export GPG_TTY=`tty`
