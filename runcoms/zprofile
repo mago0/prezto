@@ -78,7 +78,8 @@ fi
 TMPPREFIX="${TMPDIR%/}/zsh"
 
 #
-# Set current TTY for GPG passphrase prompt
+# Misc
 #
 
 export GPG_TTY=`tty`
+export GOPATH="/Users/mattw/Projects/GoCode"

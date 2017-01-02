@@ -96,6 +96,17 @@ zstyle ':prezto:module:git:status:ignore' submodules 'all'
 # Auto set to 'off' on dumb terminals.
 zstyle ':prezto:module:prompt' theme 'sorin'
 
+# Sorin Prompt Git Legend
+# added:     ✚
+# ahead:     ⬆
+# behind:    ⬇
+# deleted:   ✖
+# modified:  ✱
+# renamed    ➜
+# stashed:   ✭
+# unmerged:  ═
+# untracked: ◼
+
 #
 # Ruby
 #
