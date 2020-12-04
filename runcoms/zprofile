@@ -84,6 +84,7 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 
 export FSR="/Users/mattw/Projects/FloSports"
 export GPG_TTY=`tty`
+export GOROOT="/usr/local/Cellar/go/1.15.4"
 export GOPATH="/Users/mattw/Projects/GoCode"
 export GATLING_HOME="/Users/mattw/opt/gatling-charts-highcharts-bundle-3.3.1/"
 # Add Visual Studio Code (code)
@@ -91,9 +92,12 @@ export PATH="${PATH}:/Applications/Visual\ Studio\ Code.app/Contents/Resources/a
 # export PATH="/usr/local/opt/python/libexec/bin:/Users/mattw/bin:/Users/mattw/Library/Python/3.7/bin:/Volumes/Projects/FloSports/admin-scripts/bin:${PATH}"
 export PATH="${PATH}:/Users/mattw/Library/Python/3.7/bin:/Users/mattw/bin"
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/mattw/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mattw/google-cloud-sdk/path.zsh.inc'; fi
-
 ##
 ## Command completion belongs in ~/.zprezto/modules/completion/src
 ##
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/mattw/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mattw/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/mattw/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mattw/google-cloud-sdk/completion.zsh.inc'; fi
