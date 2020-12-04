@@ -12,6 +12,8 @@ fi
 
 ### Customizations ###
 
+eval "$(starship init zsh)"
+
 # Source custom zsh files
 source ~/.zsh/aliases.zsh
 source ~/.zsh/functions.zsh
